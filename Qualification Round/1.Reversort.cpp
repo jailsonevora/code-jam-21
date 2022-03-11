@@ -5,6 +5,9 @@
 
 using namespace std;
 
+int reversort(vector<int> items){
+
+}
 
 int main(){
 
@@ -22,13 +25,15 @@ int main(){
 
         int temp;
         string line;
-        vector<int> sequence;
+        vector<int> items;
 
         getline(std::cin, line);
         istringstream ss(line);
 
         while (ss >> temp)
-            sequence.push_back(temp);
+            items.push_back(temp);
+
+        cout << "Case #" << i << ": " << reversort(items) << endl;
 
         std::cin.clear();
     }

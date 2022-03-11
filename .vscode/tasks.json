@@ -7,7 +7,7 @@
             "args": [
                 "-g",
                 "${file}",
-                "${workspaceFolder}\\Util\\*.cpp",
+                //"${workspaceFolder}\\Util\\*.cpp",
                 "-o",
                 "${fileDirname}\\${fileBasenameNoExtension}.exe",
                 "-I",
@@ -33,7 +33,7 @@
                 "-fdiagnostics-color=always",
                 "-g",
                 "${file}",
-                "${workspaceFolder}\\Util\\*.cpp",
+                //"${workspaceFolder}\\Util\\*.cpp",
                 "*.cpp",
                 "-o",
                 "${fileDirname}\\${fileBasenameNoExtension}.exe",
