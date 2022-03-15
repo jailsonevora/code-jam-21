@@ -6,7 +6,10 @@
 using namespace std;
 
 int moonsUmbrella(int x, int y, string s){
-    return 0;
+    for(int i = 0; i < s.size(); i++){
+        if(s[i] == 'J')
+            
+    }
 }
 
 int main(){
