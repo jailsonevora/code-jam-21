@@ -5,7 +5,7 @@
 
 using namespace std;
 
-int moonsUmbrella(items){
+int moonsUmbrella(int x, int y, string s){
     return 0;
 }
 
@@ -15,22 +15,14 @@ int main(){
     cin.tie(0);
     cout.tie(0);
 
-    int t;
+    int t, x, y;
+    string s;
     cin>>t;
     for(int i=1; i <= t; ++i){
 
-        int temp;
-        string line;
-        vector<int> items;
+        cin >> x >> y >> s;
 
-        getline(std::cin, line);
-        istringstream ss(line);
-
-        while (ss >> temp)
-            items.push_back(temp);
-
-        cout << "Case #" << i << ": " << moonsUmbrella(items) << endl;
-
+        cout << "Case #" << i << ": " << moonsUmbrella(x, y, s) << endl;
         std::cin.clear();
     }
     
