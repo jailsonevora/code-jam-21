@@ -12,6 +12,13 @@ int moonsUmbrella(int x, int y, string s){
         else if(s[i-1] == 'C' && s[i] == '?')
             s[i] = 'C';
     }
+
+    for(int i = s.size()-1; i >= 0; i--){
+        if(s[i] == 'J' && s[i-1] == '?')
+           s[i] = 'J';
+        else if(s[i] == 'C' && s[i-1] == '?')
+            s[i] = 'C';
+    }
 }
 
 int main(){
