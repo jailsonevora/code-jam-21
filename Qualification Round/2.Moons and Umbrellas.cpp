@@ -8,17 +8,19 @@ using namespace std;
 int moonsUmbrella(int x, int y, string s){
     for(int i = 0; i < s.size(); i++){
         if(s[i-1] == 'J' && s[i] == '?')
-           s[i] = 'J';
+            s[i] = 'J';
         else if(s[i-1] == 'C' && s[i] == '?')
             s[i] = 'C';
     }
 
     for(int i = s.size()-1; i >= 0; i--){
         if(s[i] == 'J' && s[i-1] == '?')
-           s[i] = 'J';
+            s[i-1] = 'J';
         else if(s[i] == 'C' && s[i-1] == '?')
             s[i] = 'C';
     }
+
+    return 0;
 }
 
 int main(){
