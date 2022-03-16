@@ -20,6 +20,12 @@ int moonsUmbrella(int x, int y, string s){
         else if(s[i] == 'C' && s[i-1] == '?')
             s[i-1] = 'C';
     }
+    
+    int cost = 0;
+    for(int i = 0; i < s.size(); i++){
+        if(s[i] == 'J' && s[i-1] == 'C')
+    }
+
 
     return 0;
 }
