@@ -6,7 +6,7 @@
 using namespace std;
 
 int moonsUmbrella(int x, int y, string s){
-    
+
     for(int i = 0; i < s.size(); i++){
         if(s[i-1] == 'J' && s[i] == '?')
             s[i] = 'J';
@@ -18,7 +18,7 @@ int moonsUmbrella(int x, int y, string s){
         if(s[i] == 'J' && s[i-1] == '?')
             s[i-1] = 'J';
         else if(s[i] == 'C' && s[i-1] == '?')
-            s[i] = 'C';
+            s[i-1] = 'C';
     }
 
     return 0;
