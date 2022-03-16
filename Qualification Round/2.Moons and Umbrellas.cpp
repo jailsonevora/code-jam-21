@@ -28,9 +28,7 @@ int moonsUmbrella(int x, int y, string s){
         else if(s[i] == 'C' && s[i-1] == 'J')
             cost += y;
     }
-
-
-    return 0;
+    return cost;
 }
 
 int main(){
