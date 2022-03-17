@@ -30,6 +30,24 @@ int moonsUmbrella(int x, int y, string s){
     return cost;
 }
 
+int moonsUmbrellaExtraSample(int x, int y, string s){
+
+    int lastC = 0, lastJ = 0;
+    for(int i = 0; i < s.size(); i++){
+        int newLastC = INT_MAX;
+        int newLastJ = INT_MAX;
+        if(s[i] == 'J' || s[i] == '?')
+            newLastJ = min(lastJ, lastC + x);
+        if(s[i-1] == 'C' && s[i] == '?')
+            s[i] = 'C';
+    }
+
+    
+    
+    int cost = 0;
+    return cost;
+}
+
 int main(){
 
     ios_base::sync_with_stdio(0);
