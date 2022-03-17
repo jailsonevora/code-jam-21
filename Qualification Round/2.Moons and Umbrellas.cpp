@@ -34,13 +34,17 @@ int moonsUmbrellaExtraSample(int x, int y, string s){
 
     int lastC = 0, lastJ = 0;
     for(int i = 0; i < s.size(); i++){
+        
         int newLastC = INT_MAX;
         int newLastJ = INT_MAX;
+
         if(s[i] == 'J' || s[i] == '?')
             newLastJ = min(lastJ, lastC + x);
         if(s[i] == 'C' || s[i] == '?')
             newLastC = min(lastC, lastJ + y);
 
+        lastC = newLastC;
+        lastJ = newLastJ;
     }
 
     
