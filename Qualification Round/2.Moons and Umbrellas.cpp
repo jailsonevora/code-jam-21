@@ -46,11 +46,7 @@ int moonsUmbrellaExtraSample(int x, int y, string s){
         lastC = newLastC;
         lastJ = newLastJ;
     }
-
-    
-    
-    int cost = 0;
-    return cost;
+    return min(lastC,lastJ);
 }
 
 int main(){
