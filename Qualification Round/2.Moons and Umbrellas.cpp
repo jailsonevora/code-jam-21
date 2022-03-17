@@ -39,7 +39,8 @@ int moonsUmbrellaExtraSample(int x, int y, string s){
         if(s[i] == 'J' || s[i] == '?')
             newLastJ = min(lastJ, lastC + x);
         if(s[i-1] == 'C' && s[i] == '?')
-            s[i] = 'C';
+            newLastC = min(lastC, lastJ + y);
+
     }
 
     
