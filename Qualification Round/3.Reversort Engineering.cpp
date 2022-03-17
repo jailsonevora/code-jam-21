@@ -7,13 +7,7 @@ using namespace std;
 
 int reversortEng(vector<int> L){
 
-    int iteration = 0;
-    for(int i = 0, j = 0; i < L.size()-1; i++){
-        j = min_element(L.begin()+i,L.end())-L.begin();
-        reverse(L.begin()+i,L.begin()+j+1);
-        iteration+=j-i+1;
-    }
-    return iteration;
+    return 0;
 }
 
 int main(){
