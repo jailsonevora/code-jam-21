@@ -62,7 +62,7 @@ int main(){
 
         cin >> x >> y >> s;
 
-        cout << "Case #" << i << ": " << moonsUmbrella(x, y, s) << endl;
+        cout << "Case #" << i << ": " << moonsUmbrellaExtraSample(x, y, s) << endl;
         std::cin.clear();
     }
     
