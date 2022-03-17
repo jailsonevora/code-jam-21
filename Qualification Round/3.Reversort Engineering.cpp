@@ -40,7 +40,7 @@ int main(){
         while (ss >> temp)
             items.push_back(temp);
 
-        cout << "Case #" << i << ": " << reversort(items) << endl;
+        cout << "Case #" << i << ": " << reversortEng(items) << endl;
 
         std::cin.clear();
     }
