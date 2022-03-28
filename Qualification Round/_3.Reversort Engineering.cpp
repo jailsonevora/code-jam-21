@@ -6,7 +6,6 @@
 using namespace std;
 
 int reversortEng(vector<int> L){
-
     return 0;
 }
 
