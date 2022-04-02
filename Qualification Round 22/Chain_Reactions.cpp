@@ -25,11 +25,12 @@ const ld EPS = 1e-9;
 
 
 
-void solve(int n, ) {
+int solve(int n, vector<int> items) {
     
 }
 
 int main() {
+
     ios_base::sync_with_stdio(0);
     cin.tie(0); cout.tie(0);
     
